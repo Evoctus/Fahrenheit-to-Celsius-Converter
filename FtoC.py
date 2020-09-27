@@ -1,6 +1,6 @@
 import sys
-CheckProgram = 1
-while CheckProgram == 1:
+loop = True
+while loop:
     CheckInput = (input("Fahrenheit into Celsius or Celsius into Fahrenheit?"))
     if CheckInput.upper() == "FAHRENHEIT INTO CELSIUS":
         CheckInput = 1
@@ -8,7 +8,7 @@ while CheckProgram == 1:
         CheckInput = 2
     else:
         print ("Please enter Fahrenheit into Celsius or Celsius into Fahrenheit")
-        CheckProgram = 1
+        loop = True
     while CheckInput == 1:
         while True:
             Fahrenheit = (input("Enter a temperature in Fahrenheit:"))
